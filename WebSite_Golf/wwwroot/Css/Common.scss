@@ -1,0 +1,188 @@
+﻿@mixin prop_calc($prop,$value) {
+    #{$prop}: -webkit-calc(#{$value});
+    #{$prop}: -moz-calc(#{$value});
+    #{$prop}: calc(#{$value});
+}
+
+@mixin word_break($value) {
+    -ms-word-break: #{$value};
+    word-break: #{$value};
+}
+
+@mixin opacity($value) {
+    filter: alpha(opacity=$value);
+    -moz-opacity: $value * 0.01;
+    opacity: $value * 0.01;
+}
+
+@mixin display_flex() {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+@mixin box() {
+    display: box; /* 標準 */
+    display: -moz-box; /* Firefox */
+    display: -webkit-box; /* Webkit系 */
+    display: -ms-flexbox; /* IE */
+}
+
+@mixin box_flex() {
+    -webkit-box-flex: 1; /* Safari,Google Chrome用 */
+    -moz-box-flex: 1; /* Firefox用 */
+    box-flex: 1;
+}
+
+@mixin box_shadow($offsetWidth, $offsetHeight, $width, $color, $style) {
+    -webkit-box-shadow: #{$offsetWidth} #{$offsetHeight} #{$width} #{$color} #{$style};
+    -moz-box-shadow: #{$offsetWidth} #{$offsetHeight} #{$width} #{$color} #{$style};
+    box-shadow: #{$offsetWidth} #{$offsetHeight} #{$width} #{$color} #{$style};
+}
+
+@mixin box_sizing() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin overflow_scrolling_smooth() {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+//@animation=ease,linear,ease-in,ease-out,ease-in-out,cubic-bezier
+@mixin transition($seconds, $animation) {
+    -webkit-transition: all $seconds $animation;
+    -moz-transition: all $seconds $animation;
+    -o-transition: all $seconds $animation;
+}
+
+@mixin border_radius($size) {
+    -webkit-border-radius: #{$size};
+    -moz-border-radius: #{$size};
+    -o-border-radius: #{$size};
+    border-radius: #{$size};
+}
+
+
+
+$color-body-back-color: #f0f8f0;
+$color-base-font-color: #006622;
+
+body{
+    background-color:$color-body-back-color;
+    color:$color-base-font-color;
+    margin:0;
+    padding:0;
+}
+img {
+    max-width:90%;
+}
+.content-panel {
+    padding:10px;
+}
+.content-panel .hole-list {
+    padding:0;
+    margin-bottom:10px;
+}
+.content-panel .hole-list a {
+    background-color: #006600;
+    color: #ffffff;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    margin: 4px 4px 0 0;
+    @include box_sizing();
+    text-decoration: none;
+    text-align:center;
+}
+.content-panel .hole-description-panel {
+}
+
+.hole-image-list-panel {
+    @include display_flex();
+    width:100%;
+}
+.hole-image-list-panel img {
+    width:100%;
+}
+.hole-image-list-panel .hole-image-panel {
+    flex-basis: 25%;
+    margin-right:10px;
+}
+.hole-image-list-panel .green-image-panel {
+    @include prop_calc("flex-basis", "75% - 10px");
+}
+
+
+.section-title{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+    padding:10px;
+    border:none;
+    background-color:#ffffff;
+    border-left:solid 3px #00aa33;
+}
+.description-panel{
+    margin-bottom:40px;
+    line-height:1.5;
+}
+.floating-left-image {
+    float: left;
+    margin-right: 10px;
+}
+.floating-right-image {
+    float: right;
+    margin-left: 10px;
+}
+.image-panel.center {
+    text-align:center;
+    width:100%;
+}
+.image-text-panel {
+    @include display_flex();
+}
+.image-text-panel .image-panel{
+    flex-basis:30%;
+}
+.image-text-panel img{
+}
+.image-text-panel .text-panel {
+    @include prop_calc("flex-basis", "70% - 10px");
+}
+.sky-view-image-panel {
+}
+.sky-view-image-panel img {
+    vertical-align: top;
+    width: 200px;
+    height: auto;
+    margin: 0 10px 10px 0;
+}
+
+
+
+.video-panel {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    margin-bottom:10px;
+}
+.video-panel iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+

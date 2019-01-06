@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+    <link href="~/Css/Common.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content-panel">
+        <div class="hole-list">
+            @for (int i = 1; i <= 18; i++)
+            {
+                <a href="@String.Format("/Masters/Hole/{0}", i)">Hole @i.ToString()</a>
+            }
+        </div>
+        <div class="hole-description-panel">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
