@@ -16,7 +16,7 @@ namespace WebSite.Controllers
         [HttpGet("/Masters/Hole/{number}")]
         public IActionResult Hole(Int32 number)
         {
-            if (number == 2 || number == 7)
+            if (number == 2 || number == 3 || number == 7)
             {
                 return View("Hole" + number);
             }
