@@ -21,4 +21,4 @@ var UI;
         panel.Initialize();
     });
 })(UI || (UI = {}));
-//# sourceMappingURL=VideoImagePanel.js.map
+//# sourceMappingURL=GolfVideoPanel.js.map

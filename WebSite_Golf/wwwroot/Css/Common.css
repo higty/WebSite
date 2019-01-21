@@ -21,7 +21,7 @@ table td {
   padding: 0;
   margin-bottom: 10px; }
 
-.content-panel .hole-list a {
+.content-panel .hole-list a.hole-link {
   background-color: #006600;
   color: #ffffff;
   display: inline-block;
@@ -34,6 +34,9 @@ table td {
   box-sizing: border-box;
   text-decoration: none;
   text-align: center; }
+
+.content-panel .hole-list a.hole-link.under-construction {
+  background-color: #aaaaaa; }
 
 .hole-image-list-panel {
   display: -webkit-flex;

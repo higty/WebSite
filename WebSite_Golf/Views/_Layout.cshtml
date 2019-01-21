@@ -9,7 +9,12 @@
         <div class="hole-list">
             @for (int i = 1; i <= 18; i++)
             {
-                <a href="@String.Format("/Masters/Hole/{0}", i)">Hole @i.ToString()</a>
+                var className = "under-construction";
+                if (i == 2 || i == 3 || i == 7)
+                {
+                    className = "";
+                }
+                <a href="@String.Format("/Masters/Hole/{0}", i)" class="hole-link @className">Hole @i.ToString()</a>
             }
         </div>
         <div class="hole-description-panel">

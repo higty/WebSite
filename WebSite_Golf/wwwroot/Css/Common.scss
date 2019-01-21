@@ -88,6 +88,7 @@ table {
 table td{
     padding:2px;
 }
+
 .content-panel {
     padding:10px;
 }
@@ -95,7 +96,7 @@ table td{
     padding:0;
     margin-bottom:10px;
 }
-.content-panel .hole-list a {
+.content-panel .hole-list a.hole-link {
     background-color: #006600;
     color: #ffffff;
     display: inline-block;
@@ -105,8 +106,12 @@ table td{
     margin: 4px 4px 0 0;
     @include box_sizing();
     text-decoration: none;
-    text-align:center;
+    text-align: center;
 }
+.content-panel .hole-list a.hole-link.under-construction {
+    background-color: #aaaaaa;
+}
+
 .content-panel .hole-description-panel {
 }
 
