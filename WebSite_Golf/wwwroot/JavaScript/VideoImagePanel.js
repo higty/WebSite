@@ -11,7 +11,6 @@ var UI;
             var div = $(e.currentTarget);
             var url = div.attr("url");
             window.open(url);
-            //div.append("<iframe type=\"text/html\" frameborder=\"0\" src=\"" + div.attr("url") + "\">");
         };
         return VideoImagePanel;
     }());
@@ -21,4 +20,4 @@ var UI;
         panel.Initialize();
     });
 })(UI || (UI = {}));
-//# sourceMappingURL=GolfVideoPanel.js.map
+//# sourceMappingURL=VideoImagePanel.js.map

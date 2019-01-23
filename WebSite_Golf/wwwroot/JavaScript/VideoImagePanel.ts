@@ -9,7 +9,6 @@ module UI {
             var div = $(e.currentTarget);
             var url = div.attr("url");
             window.open(url);
-            //div.append("<iframe type=\"text/html\" frameborder=\"0\" src=\"" + div.attr("url") + "\">");
         }
     }
 
