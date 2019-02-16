@@ -16,11 +16,19 @@ namespace WebSite.Controllers
         [HttpGet("/Masters/Hole/{number}")]
         public IActionResult Hole(Int32 number)
         {
-            if (number == 2 || number == 3 || number == 7)
+            if (IsUnderConstructionHole(number) == true)
             {
-                return View("Hole" + number);
+                return View("UnderConstruction");
             }
-            return View("UnderConstruction");
+            return View("Hole" + number);
+        }
+        public static Boolean IsUnderConstructionHole(Int32 number)
+        {
+            if (number < 9)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
