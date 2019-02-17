@@ -24,7 +24,7 @@ namespace WebSite.Controllers
         }
         public static Boolean IsUnderConstructionHole(Int32 number)
         {
-            if (number < 9)
+            if (number < 10)
             {
                 return false;
             }
