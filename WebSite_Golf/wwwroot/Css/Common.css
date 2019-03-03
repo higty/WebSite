@@ -66,6 +66,17 @@ table td {
   border: solid 1px #cccccc;
   padding: 6px; }
 
+.hole-stats-table {
+  background-color: #ffffff;
+  margin-bottom: 10px; }
+
+.hole-stats-table td {
+  border: solid 1px #cccccc;
+  padding: 6px; }
+
+.hole-stats-table .holestats-history-data {
+  margin-right: 10px; }
+
 .section-title {
   font-size: 20px;
   font-weight: bold;

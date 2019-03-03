@@ -20,11 +20,11 @@ namespace WebSite.Controllers
             {
                 return View("UnderConstruction");
             }
-            return View("Hole" + number);
+            return View("Hole" + number.ToString("00"));
         }
         public static Boolean IsUnderConstructionHole(Int32 number)
         {
-            if (number < 10)
+            if (number < 12)
             {
                 return false;
             }

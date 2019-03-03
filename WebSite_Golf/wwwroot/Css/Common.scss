@@ -89,6 +89,7 @@ table td{
     padding:2px;
 }
 
+
 .content-panel {
     padding:10px;
 }
@@ -138,15 +139,26 @@ table td{
     border:solid 1px #cccccc;
     padding:6px;
 }
+.hole-stats-table {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.hole-stats-table td {
+    border: solid 1px #cccccc;
+    padding: 6px;
+}
+.hole-stats-table .holestats-history-data{
+    margin-right:10px;
+}
 
-.section-title{
-    font-size:20px;
-    font-weight:bold;
-    margin-bottom:10px;
-    padding:10px;
-    border:none;
-    background-color:#ffffff;
-    border-left:solid 3px #00aa33;
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-left: solid 3px #00aa33;
 }
 .description-panel{
     margin-bottom:40px;
