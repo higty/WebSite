@@ -24,11 +24,7 @@ namespace WebSite.Controllers
         }
         public static Boolean IsUnderConstructionHole(Int32 number)
         {
-            if (number < 17)
-            {
-                return false;
-            }
-            return true;
+            return false;
         }
     }
 }

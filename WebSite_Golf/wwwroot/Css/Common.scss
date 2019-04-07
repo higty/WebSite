@@ -89,9 +89,20 @@ table td{
     padding:2px;
 }
 
+.hole-panel{
+    vertical-align:top;
+    display:inline-block;
+    width:200px;
+    height:160px;
+    margin-bottom:20px;
+}
+.hole-panel .hole-number{
+    font-size:20px;
+    font-weight:bold;
+}
 
 .content-panel {
-    padding:10px;
+    padding: 10px;
 }
 .content-panel .hole-list {
     padding:0;
